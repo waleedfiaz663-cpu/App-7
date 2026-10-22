@@ -33,9 +33,13 @@ namespace Assignment2_Q3
             processor.ThresholdExceeded += ShowAlertMessage;
 
             processor.CheckNumber(45);
+            
             Console.WriteLine("");
+            
             Console.WriteLine("-------------------");
+            
             Console.WriteLine("");
+            
             processor.CheckNumber(150);
            
         }
@@ -43,6 +47,7 @@ namespace Assignment2_Q3
         static void ShowAlertMessage(int value)
         {
             Console.WriteLine("");
+            
             Console.WriteLine($"[EVENT ALERT]: The number {value} has exceeded the limit of 100!");
         }
     }
